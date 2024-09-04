@@ -9,4 +9,3 @@ class menus{
         <?php
     }
 }
-?>

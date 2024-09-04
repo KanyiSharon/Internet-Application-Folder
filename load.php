@@ -1,7 +1,13 @@
 <?php
+//layouts
+require_once"layout\layouts.php";
 
+$ObjLayouts= new layouts();
 require_once "user_details.php";
-
+//Menues
+require_once "menues/menues.php";
+$ObjMenu= new menus();
+//User Details
 $Obj = new user_details();
 
 $arr=["black","white","green","red"];
