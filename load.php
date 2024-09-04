@@ -25,3 +25,5 @@ IF(file_exists("index.php") AND is_readable("index.php")){
 }else{
     print "File does not exist";
 }
+print "<br>";
+?>
