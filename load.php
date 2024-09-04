@@ -20,7 +20,7 @@ print basename($_SERVER["PHP_SELF"]);
 print "<br>";
 
 //TO CHECK IF A FILE EXIST
-IF(file_exists("index.php")){
+IF(file_exists("index.php") AND is_readable("index.php")){
     print "File exists";
 }else{
     print "File does not exist";
