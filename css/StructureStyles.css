@@ -28,4 +28,11 @@ body{
     text-decoration: none;
     
 }
-.topnav-right
+.topnav-right{
+    float:right;
+}
+.footer{
+    background-color:black;
+    padding:20px;
+    
+}
