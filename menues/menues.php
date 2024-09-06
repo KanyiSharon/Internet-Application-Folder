@@ -8,4 +8,9 @@ class menus{
         </div>
         <?php
     }
+    public function main_right_menu(){
+        ?>
+        <div class="topnav">
+        <a href=""
+    }
 }
