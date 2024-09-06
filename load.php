@@ -8,6 +8,7 @@ foreach($directoriesAs $dir){
     $filname=dirname(__FILE__).DIRECTORY_SEPARATOR.$dir.DIRECTORY_SEPARATOR . $CLASSNAME .".PHP";
 }
 }
+spl_autoload_register('classAutoLoad');
 //layouts
 require_once"layout\layouts.php";
 
