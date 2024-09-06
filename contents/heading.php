@@ -1,7 +1,8 @@
 <?php
 class headings{
-    public function main_heading(){
+    public function main_banner(){
         ?>
         <div
+            <?php
     }
 }

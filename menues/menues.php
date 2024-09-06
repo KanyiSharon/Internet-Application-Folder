@@ -10,7 +10,7 @@ class menus{
     }
     public function main_right_menu(){
         ?>
-        <div class="topnav">
+        <div class="topnav-right">
         <a href=""
     }
 }
