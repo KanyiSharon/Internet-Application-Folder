@@ -9,37 +9,8 @@ foreach($directoriesAs $dir){
 }
 }
 spl_autoload_register('classAutoLoad');
-//layouts
-require_once"layout\layouts.php";
-
-$ObjLayouts= new layouts();
-require_once "user_details.php";
-//Menues
-require_once "menues/menues.php";
-$ObjMenu= new menus();
-//User Details
-$Obj = new user_details();
-
-//
-
-// foreach($arr as $color){
-// print $color ."<br>";
-// }
-
-// print dirname(__FILE__);
-// print "<br>";
-// print "<br>";
-// print $_SERVER["PHP_SELF"];
-// print "<br>";
-// print "<br>";
-// print basename($_SERVER["PHP_SELF"]);
-// print "<br>";
-
-// //TO CHECK IF A FILE EXIST
-// IF(file_exists("index.php") AND is_readable("index.php")){
-//     print "File exists";
-// }else{
-//     print "File does not exist";
-// }
-// print "<br>";
+//create instance of all classes
+$ObjLayouts =new layouts();
+$ObjMenus = new menus();
+$ObjHeadings =new headings();
  ?>
