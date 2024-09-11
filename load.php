@@ -22,3 +22,4 @@ spl_autoload_register('classAutoLoad');
 $ObjLayouts = new layouts();
 $ObjMenus = new menus();
 $ObjHeadings = new headings();
+$ObjContents = new contents();
