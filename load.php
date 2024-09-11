@@ -1,16 +1,24 @@
 <?php
 
+function classAutoLoad($classname)
+{
+    $directories = ["contents", "layouts", "menus"];
 
-//class auto load
-function classAutoLoad(classname){
-$directories=["contents","layouts","menus"];
-foreach($directoriesAs $dir){
-    $filname=dirname(__FILE__).DIRECTORY_SEPARATOR.$dir.DIRECTORY_SEPARATOR . $CLASSNAME .".PHP";
+    
+    foreach($directories as $dir)
+    {
+        $filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . $dir . DIRECTORY_SEPARATOR . $classname . ".php";
+
+        if(file_exists($filename) AND is_readable($filename))
+        {
+            require_once $filename;
+        }
+    }
 }
-}
+
 spl_autoload_register('classAutoLoad');
-//create instance of all classes
-$ObjLayouts =new layouts();
+
+// Objects of all classes
+$ObjLayouts = new layouts();
 $ObjMenus = new menus();
-$ObjHeadings =new headings();
- ?>
+$ObjHeadings = new headings();
